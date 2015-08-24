@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <title>Fullstack Foundations - Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadNum()">
+  <h1> Welcome to the Guessing Game! </h1>
+  <h2> Please input a number between 1 and 100 </h2>
+  <input type="text" id="guessBox" placeholder="input 1-100" onkeydown="if (event.keyCode == 13) checkGuess()"/>
+  <h3 id="status">5 guesses remaining</h3>
+  <p>
+  <button class="button green" onclick='checkGuess()'>Guess!</button>
+  <button class="button red" onclick='showNum()'>Hint?</button>
+  <button class="button blue" onclick='loadNum()'>Reset</button>
+  <p>
+  <script src="guess.js"></script>
+</body>
+</html>
